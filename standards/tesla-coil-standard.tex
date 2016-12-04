@@ -1,11 +1,69 @@
-\documentclass[a4paper,10pt]{jsarticle}
-\begin{document}
+\documentclass[a4paper,11pt]{jsarticle}
 
-
-\title{Tsukuba Science Inc. Tesla Coil Standard}
+\title{Tsukuba Science Inc. Tesla Coil Standard \\ つくば科学株式会社 テスラコイル標準規格 \\ Rev 1.0}
 \author{\vspace*{20mm}\ \\つくば科学株式会社\\菊地 秀人}
 \date{\vspace*{20mm}\ \\2016年12月03日}
+
+\begin{document}
 \maketitle
+
+\clearpage
+
+\section{イントロダクション}
+TSTC Standard（Tsukuba Science Inc. Tesla Coil Standard）とは、つくば科学株式会社（Tsukuba Science Inc.）が定めたテスラコイルに関する標準規格である。
+既製品の数よりもハンドメイドによる個体数が多いと思われる状況下の中で、標準規格を定めることを目標とする。
+
+
+\section{テスラコイルの基本}
+
+\vspace{10pt}
+\begin{description}
+\setlength{\leftskip}{0.5cm}
+	\item [SGTC] : Spark Gap Tesla Coil\\
+	スパークギャップを利用する原始的なもの
+	\item [SSTC] : Solid State Tesla Coil\\
+	半導体制御で2次側のみ共振するもの
+	\item [DRSSTC] : Dual Resonant Solid State Tesla Coil\\
+	半導体制御でSGTCを再現したもの
+	\item [VTTC] : Vacuum Tube Tesla Coil\\
+	真空管を使用したもの
+	\item [QCWDRSSTC] : Quasi Continuous Wave Dual Resonant Solid State Tesla Coil\\
+	半導体制御でVTTCを再現したもの
+\end{description}
+\vspace{10pt}
+
+\section{DRSSTC基本仕様}
+
+\subsection{ロジック仕様}
+内部のロジック回路について以下の種類を定める。\\
+
+低電圧仕様（Low Voltage Tesla Logic : LVTL）\\
+高電圧仕様（High Voltage Tesla Logic : HVTL）\\
+
+ノイズマージンを稼ぐためには、ロジック電圧の高い、高電圧仕様を採用することを推奨する。\\
+
+1.0[m]以上の放電長、または消費電力500[W]以上のテスラコイルでは、低電圧仕様の採用は禁止とする。
+
+
+\subsection{インタラプター入力仕様}
+入力段では、最低でもフォトカプラを使用の上必ず絶縁を行う。\\
+絶縁距離の関係上、以下の光ファイバーを推奨する。\\
+Industrial Fiber Optics, Inc.\\
+Everlight Electronics Co., Ltd. (Photolink)\\
+
+
+\section{インタラプター基本仕様}
+
+使用率の設定が可能。
+
+
+
+\subsection{同軸ケーブル出力方式}
+15V推奨。12V～18V範囲内で使用。\\
+
+\subsection{光ファイバー出力方式}
+コネクタの物理形状は以下の種類のうち、最低一つを採用すること。\\
+複数種類実装することが望ましい。\\
 
 
 
@@ -13,3 +71,5 @@
 
 
 \end{document}
+
+
